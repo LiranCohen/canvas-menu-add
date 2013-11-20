@@ -1,12 +1,12 @@
 <?php
 /*
-Plugin Name: Canvas Navigation Addition
-Plugin URI: http://yes
-Description: A brief description of the Plugin.
-Version: The Plugin's Version Number, e.g.: 1.0
-Author: Name Of The Plugin Author
-Author URI: http://URI_Of_The_Plugin_Author
-License: A "Slug" license name e.g. GPL2
+Plugin Name: Canvas Mobile Menu Addition
+Plugin URI: http://github.com/LiranCohen/canvas-menu-add/
+Description: WooThemes' Canvas Mobile Menu Addition. Hides sub-menus in mobile mode and shows them only when clicked.
+Version: 1.1
+Author: Liran Cohen
+Author URI: http://www.liranco.info
+License: GPL2
 */
 
 function canvas_nav_scripts(){
