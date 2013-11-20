@@ -2,8 +2,8 @@ jQuery(function($){
 	$(document).ready(function(){
 		var winH = $(window).height(), winW = $(window).width();
 		if($(window).width() < 768) {
-			$('#navigation .sub-menu').css({
-				display:"block"
+			$('#navigation ul.sub-menu').css({
+				display:"none"
 			});
 		}
 		var previousLink=null;
@@ -14,9 +14,9 @@ jQuery(function($){
 					$('#navigation ul').css({
 						display: ""
 					});
-				} else ($(window).width() < 768) {
-					$('#navigation .sub-menu').css({
-						display:"block"
+				} else if ($(window).width() < 768) {
+					$('#navigation ul.sub-menu').css({
+						display:"none"
 					});
 				}
 			}
