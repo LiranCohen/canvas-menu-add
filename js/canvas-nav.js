@@ -1,12 +1,24 @@
+// Plugin Name: Canvas Mobile Menu Addition
+// Plugin URI: http://github.com/LiranCohen/canvas-menu-add/
+// Description: WooThemes' Canvas Mobile Menu Addition. Hides sub-menus in mobile mode and shows them only when clicked.
+// Version: 1.1
+// Author: Liran Cohen
+// Author URI: http://www.liranco.info
+// License: GPL2
+
+
 jQuery(function($){
 	$(document).ready(function(){
-		var winH = $(window).height(), winW = $(window).width();
+		//gets and tests the window's width for the purpose of hiding the menus
+		winW = $(window).width();
 		if($(window).width() < 768) {
 			$('#navigation ul.sub-menu').css({
 				display:"none"
 			});
 		}
+		//sets previousLink catcher to null 
 		var previousLink=null;
+		//Makes changes on resize from mobile to larger version.
 		$(window).on('resize',function(){
 			if($(window).width() != winW) {
 				$('.nav-close').click();
